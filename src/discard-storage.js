@@ -15,8 +15,7 @@ DiscardStorage.prototype._handleFile = function _handleFile(req, file, cb) {
 }
 
 DiscardStorage.prototype._removeFile = function _removeFile(req, file, cb) {
-    delete file.buffer
-    cb(null)
+    cb(null);
 }
 
 module.exports = function (opts) {

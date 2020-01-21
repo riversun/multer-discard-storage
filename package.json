@@ -1,6 +1,6 @@
 {
   "name": "multer-discard-storage",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A storage implementation for multer that immediately discards uploaded files without saving them to memory or disk.",
   "main": "src/discard-storage.js",
   "scripts": {},
