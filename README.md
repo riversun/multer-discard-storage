@@ -12,7 +12,35 @@ npm install multer-discard-storage
 
 ```javascript
 var multer = require('multer');
-var discardStorage=require('./discard-storage.js')();
+const discardStorage=require('multer-discard-storage')();
 var upload = multer({storage: discardStorage});
 ```
 
+## Example
+
+```javascript
+
+const express = require('express');
+const multer = require('multer');
+const app = express();
+const port = 8080;
+
+app.post('/upload',
+    upload.any(),
+    function (req, res, next) {
+
+        for (let i in req.files) {
+            const file = req.files[i];
+            console.log(`No.${i} file uploaded. file size is ${file.size}`);
+        }
+
+        res.status(200).json({msg: 'OK'});
+
+    });
+
+app.listen(port, () => {
+    console.log('Server started on port:' + port);
+});
+
+
+```
