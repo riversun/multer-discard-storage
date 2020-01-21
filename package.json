@@ -1,0 +1,22 @@
+{
+  "name": "multer-discard-storage",
+  "version": "0.1.1",
+  "description": "A storage implementation for multer that immediately discards uploaded files without saving them to memory or disk.",
+  "main": "src/discard-storage.js",
+  "scripts": {},
+  "author": "Tom Misawa <riversun.org@gmail.com> (https://github.com/riversun)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riversun/multer-discard-storage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/riversun/multer-discard-storage/issues"
+  },
+  "homepage": "https://github.com/riversun/multer-discard-storage#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  },
+  "dependencies": {}
+}
